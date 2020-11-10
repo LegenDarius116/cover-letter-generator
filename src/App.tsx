@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MainComponent from './Components/Main'
+import Generator from './Components/Generator'
 
 function App() {
   return (
     <div className="App">
-      <MainComponent />
+      <Generator />
     </div>
   );
 }

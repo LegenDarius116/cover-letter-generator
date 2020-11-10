@@ -1,6 +1,9 @@
 import React from 'react';
 
 function CoverLetter(props: any) {
+    /** Takes in company name, role, and blurb as strings. It plugs them into this predefined template to
+     *  generate a cover letter for me.
+     */
     let companyName = props.companyName ? props.companyName : "<>";
     let role = props.role ? props.role : "<>";
     let blurb = props.blurb ? props.blurb : "<>";
