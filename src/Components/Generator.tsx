@@ -23,7 +23,7 @@ function Generator() {
                 </label>
                 <label>
                     Short Blurb on Company
-                    <textarea value={blurb} onChange={e => setBlurb(e.target.value)}/>
+                    <textarea value={blurb} onChange={e => setBlurb(e.target.value)} className="boxBorder"/>
                 </label>
             </form>
             <hr />
