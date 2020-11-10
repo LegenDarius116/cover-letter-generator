@@ -7,3 +7,11 @@ textarea.boxBorder {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  margin: 2%;
+}
+
+div.generated-cover-letter {
+  text-align: justify;
+}
