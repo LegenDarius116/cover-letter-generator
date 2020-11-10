@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The aim of this project was to simplify the tailoring and generation of cover letters as I pursue employment in Software Development post-graduation. Currently, it takes data on the company and the role and plugs it into a predefined template.
 
-The data takes is:
+The data taken is:
 * Company name
 * Role title
 * Short description of the role
