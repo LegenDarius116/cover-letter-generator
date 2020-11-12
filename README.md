@@ -10,4 +10,6 @@ The data taken is:
 * Short description of the role
 * Short blurb about the company and/or it's product
 
+This project has now been deployed to [Heroku](https://clgen.herokuapp.com/)! Shoutout to create-react-app for taking care of the configuration for me!
+
 This project is a work in progress, and I will be actively changing this as my needs change.
