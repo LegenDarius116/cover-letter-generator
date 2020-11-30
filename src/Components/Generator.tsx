@@ -5,6 +5,7 @@ function Generator() {
     const [companyName, setCompanyName] = React.useState("");
     const [role, setRole] = React.useState("");
     const [roleDesc, setDesc] = React.useState("");
+    const [interest, setInterest] = React.useState("");
     const [blurb, setBlurb] = React.useState("");
 
     return (
@@ -26,6 +27,10 @@ function Generator() {
                     <input type="text" value={role} onChange={e => setRole(e.target.value)} data-testid="role-input"/>
                 </label>
                 <label>
+                    Why You're Excited about the Role
+                    <textarea value={interest} onChange={e => setInterest(e.target.value)} className="boxborder" data-testid="interest-input"/>
+                </label>
+                <label>
                     Short Description of Role
                     <textarea value={roleDesc} onChange={e => setDesc(e.target.value)} className="boxBorder" data-testid="desc-input"/>
                 </label>
@@ -37,7 +42,7 @@ function Generator() {
             <hr />
 
             {/* Put actual generated cover letter here */}
-            <CoverLetter companyName={companyName} role={role} description={roleDesc} blurb={blurb}/>
+            <CoverLetter companyName={companyName} role={role} interest={interest} description={roleDesc} blurb={blurb}/>
 
             {/* Some Dummy Data
             <CoverLetter 
