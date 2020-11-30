@@ -6,14 +6,16 @@ const inputIDs = [
     "company-input", 
     "role-input", 
     "desc-input", 
-    "blurb-input"
+    "blurb-input",
+    "interest-input"
 ];
 
 const inputs = [
     "Atlas Corporation", 
     "Nuclear Weapons Engineer", 
     "improve legacy defense systems", 
-    "build systems for the defense of our nation"
+    "build systems for the defense of our nation",
+    "I want to use my skills in the defense of the United States"
 ];
 
 test("Test that inputs follow their values", () => {
@@ -43,6 +45,7 @@ test("Test that inputs change generated cover letter", () => {
         if (i == 1) {
             expect(p.textContent).toMatch(`applying for your ${inputs[1]} position.`);
             expect(p.textContent).toMatch(`systems that ${inputs[2]}.`);
+            expect(p.textContent).toMatch(`this role because ${inputs[4]}.`)
         }
         else if (i == 2) {
             expect(p.textContent).toMatch(`here at ${inputs[0]}.`);
